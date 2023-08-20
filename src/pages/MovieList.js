@@ -1,9 +1,9 @@
-import React from "react";
+import { MovieListComponent } from "../components/MovieListComponent";
 
 export const MovieList = () => {
   return (
     <main>
-      <div>MovieList</div>
+      <MovieListComponent />
     </main>
   );
 };
