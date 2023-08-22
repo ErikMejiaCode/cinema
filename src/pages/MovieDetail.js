@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Backup from "../assets/images/backup.jpg";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -19,12 +20,14 @@ export const MovieDetail = () => {
       console.log(json);
     }
     fetchMovie();
-  }, []);
+  }, [params.id]);
+
+  const pageTitle = useTitle(`${movie.title} / Cinema`);
 
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">
-        <div className="max-w-sm">
+        <div className="max-w-sm mt-4">
           <img
             src={moviePoster}
             className="rounded"
