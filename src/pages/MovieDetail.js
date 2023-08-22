@@ -22,6 +22,7 @@ export const MovieDetail = () => {
     fetchMovie();
   }, [params.id]);
 
+  //eslint-disable-next-line
   const pageTitle = useTitle(`${movie.title} / Cinema`);
 
   return (
