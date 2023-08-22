@@ -35,10 +35,10 @@ export const Header = () => {
 
   return (
     <header>
-      <nav className="bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-2 dark:border-gray-900">
+      <nav className="bg-orange-100 border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-2 dark:border-gray-900 px-2 sm:px-4 py-1">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
           <Link to="/" className="flex items-center">
-            <img src={Logo} className="h-10 mr-3" alt="Cinema Logo" />
+            <img src={Logo} className="h-6 mr-2 sm:h-9" alt="Cinema Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Cinema
             </span>
@@ -194,7 +194,7 @@ export const Header = () => {
                 />
               </form>
             </div>
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-normal border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-orange-100 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <NavLink
                   to="/"
