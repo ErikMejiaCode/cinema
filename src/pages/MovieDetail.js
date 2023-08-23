@@ -41,7 +41,7 @@ export const MovieDetail = () => {
           </h1>
           <p className="my-4 font-light">{movie.overview}</p>
           {movie.genres ? (
-            <p className="my-7 flex flex-wrap">
+            <p className="my-5 flex flex-wrap">
               {movie.genres.map((genre) => (
                 <span
                   key={genre.id}
@@ -98,7 +98,7 @@ export const MovieDetail = () => {
               rel="noreferrer"
               className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             >
-              {movie.imdb_id}{" "}
+              IMDB Website
             </a>
           </p>
           <p className="my-4">
@@ -109,7 +109,7 @@ export const MovieDetail = () => {
               rel="noreferrer"
               className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             >
-              {movie.homepage}{" "}
+              Movie Website
             </a>
           </p>
         </div>
