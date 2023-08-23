@@ -1,3 +1,10 @@
+Live Site - https://cinema-ss.netlify.app/
+
+Demo Video - 
+
+https://github.com/ErikMejiaCode/cinema/assets/112577065/dee6e269-1f7b-40aa-bfc0-7bad936b5b59
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
