@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Backup from "../assets/images/backup.jpg";
 import { useTitle } from "../hooks/useTitle";
+import { YoutubeEmbed } from "../components/YoutubeEmbed";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -17,7 +18,6 @@ export const MovieDetail = () => {
       );
       const json = await response.json();
       setMovie(json);
-      console.log(json);
     }
     fetchMovie();
   }, [params.id]);
@@ -114,6 +114,9 @@ export const MovieDetail = () => {
           </p>
         </div>
       </section>
+      <div className="mb-3 text-center">
+        <YoutubeEmbed />
+      </div>
     </main>
   );
 };

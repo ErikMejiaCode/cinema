@@ -8,3 +8,4 @@ export { MovieCard } from "./MovieCard";
 export { Button } from "./Button";
 
 export { ScrollToTop } from "./ScrollToTop";
+export { YoutubeEmbed } from "./YoutubeEmbed";
